@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+body {
+}
+.main {
+  margin: 0 5%;
+  @include respond(phone) {
+    margin: 0 0%;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: $font-cursive;
+}
+li {
+  list-style-type: none;
+}
+.blue {
+  background-color: $color-blue-1;
+}

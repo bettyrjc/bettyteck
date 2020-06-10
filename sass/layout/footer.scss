@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  background-color: $color-blue-1;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 149, 255, 1) 0%,
+    rgba(0, 74, 173, 1) 100%
+  );
+  height: 80px;
+  &-redes {
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10px 0px;
+  }
+  &-icon {
+    fill: $color-white;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  &-rights {
+    color: $color-white;
+
+    width: 100%;
+    background-color: rgba(0, 74, 173, 1);
+    p {
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}
