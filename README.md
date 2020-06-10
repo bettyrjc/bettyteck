@@ -1,0 +1,2 @@
+# bettyteck
+Sass, javascript
