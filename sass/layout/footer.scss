@@ -1,30 +1,39 @@
 .footer {
   width: 100%;
-  background-color: $color-blue-1;
   background: linear-gradient(
-    180deg,
-    rgba(7, 149, 255, 1) 0%,
-    rgba(0, 74, 173, 1) 100%
+    90deg,
+    rgba(0, 74, 173, 1) 0%,
+    rgba(7, 149, 255, 1) 100%
   );
-  height: 80px;
+  height: 50px;
   &-redes {
     height: inherit;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+
     align-items: center;
     padding: 0px 10px 0px;
   }
   &-icon {
     fill: $color-white;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
   }
   &-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $color-white;
-
+    background: rgb(0, 74, 173);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 74, 173, 1) 0%,
+      rgba(7, 149, 255, 1) 100%
+    );
+    height: 3rem;
     width: 100%;
-    background-color: rgba(0, 74, 173, 1);
+
     p {
       padding: 5px;
       text-align: center;

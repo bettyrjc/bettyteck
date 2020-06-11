@@ -20,51 +20,73 @@
       </ul>
     </header>
     <div class="slider">
-      <div class="slider-projects">
-        <div class="slider-img">
-          <img src="../img/parada.png" alt="" />
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+        <path
+          fill="#004aad"
+          fill-opacity="1"
+          d="M0,192L60,176C120,160,240,128,360,133.3C480,139,600,181,720,208C840,235,960,245,1080,240C1200,235,1320,213,1380,202.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg> -->
+
+      <svg
+        class="slider-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 700 320"
+      >
+        <path
+          fill-opacity="1"
+          d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,245.3C672,267,768,245,864,240C960,235,1056,245,1152,240C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="slider-container">
+        <div class="slider-projects">
+          <div class="slider-img">
+            <img src="../img/parada.png" alt="proyectos" />
+          </div>
+          <div class="slider-texts">
+            <h2 class="slider-texts-title">Frontend Developer</h2>
+            <p class="slider-texts-text">
+              Proyectos
+              <svg class="slider-texts-text-icon">
+                <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
+              </svg>
+            </p>
+          </div>
         </div>
-        <div class="slider-texts">
-          <h2 class="slider-texts-title">Frontend Developer</h2>
-          <p class="slider-texts-text">
-            Proyectos
-            <svg class="slider-texts-text-icon">
-              <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
-            </svg>
-          </p>
+        <!--  -->
+        <div class="slider-projects">
+          <div class="slider-img">
+            <img src="../img/diselo.svg" alt="Diseño" />
+          </div>
+          <div class="slider-texts">
+            <h2 class="slider-texts-title">Diseño UI</h2>
+            <p class="slider-texts-text">
+              Proyectos
+              <svg class="slider-texts-text-icon">
+                <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
+              </svg>
+            </p>
+          </div>
         </div>
-      </div>
-      <!--  -->
-      <div class="slider-projects">
-        <div class="slider-img">
-          <img src="../img/ux-design.svg" alt="" />
-        </div>
-        <div class="slider-texts">
-          <h2 class="slider-texts-title">Diseño UI</h2>
-          <p class="slider-texts-text">
-            Proyectos
-            <svg class="slider-texts-text-icon">
-              <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
-            </svg>
-          </p>
-        </div>
-      </div>
-      <!--  -->
-      <div class="slider-projects">
-        <div class="slider-img">
-          <img src="../img/charlando.png" alt="" />
-        </div>
-        <div class="slider-texts">
-          <h2 class="slider-texts-title">Blog</h2>
-          <p class="slider-texts-text">
-            Ver blog
-            <svg class="slider-texts-text-icon">
-              <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
-            </svg>
-          </p>
+        <!--  -->
+        <div class="slider-projects">
+          <div class="slider-img">
+            <img src="../img/blog.svg" alt="Blog" />
+          </div>
+          <div class="slider-texts">
+            <h2 class="slider-texts-title">Blog</h2>
+            <p class="slider-texts-text">
+              Ver blog
+              <svg class="slider-texts-text-icon">
+                <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
+              </svg>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
     <main class="main">
       <!-- slider -->
       <!-- lenguajes -->
@@ -107,7 +129,10 @@
       <!-- cards -->
       <div class="cards-container">
         <div class="cards-container-box">
-          <img class="cards-container-box-img" src="../img/ux-design.svg" />
+          <img
+            class="cards-container-box-img"
+            src="../img/user-experience.svg"
+          />
           <h1 class="cards-container-box-title">Diseños</h1>
         </div>
         <!--  -->
@@ -117,13 +142,23 @@
         </div>
         <!--  -->
         <div class="cards-container-box">
-          <img class="cards-container-box-img" src="../img/rocket.svg" />
+          <img class="cards-container-box-img" src="../img/blog_1.svg" />
           <h1 class="cards-container-box-title">Blog</h1>
         </div>
       </div>
       <!-- presentacion -->
-      <div class="aboutMe">
-        <div class="aboutMe-container">
+      <!-- footer -->
+    </main>
+    <div class="aboutMe">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,320L40,288C80,256,160,192,240,186.7C320,181,400,235,480,250.7C560,267,640,245,720,202.7C800,160,880,96,960,74.7C1040,53,1120,75,1200,69.3C1280,64,1360,32,1400,16L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="aboutMe-container">
+        <div class="aboutMe-container-description">
           <h2 class="aboutMe-container-title">Betty Jimenez</h2>
           <p class="aboutMe-container-text">
             Hola soy Betty Jimenez , Frontend Developer y te voy a ayudar a
@@ -133,8 +168,8 @@
         </div>
         <img src="../img/charlando.png" alt="" class="aboutMe-img" />
       </div>
-      <!-- footer -->
-    </main>
+    </div>
+    <!--  -->
     <footer class="footer">
       <div class="footer-redes">
         <svg class="footer-icon">
@@ -149,9 +184,6 @@
         <svg class="footer-icon">
           <use href="../img/icons/sprite.svg#icon-twitter" />
         </svg>
-      </div>
-      <div class="footer-rights">
-        <p>Todos los derechos son reservados</p>
       </div>
     </footer>
     <script src="../js/index.js"></script>

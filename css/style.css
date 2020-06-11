@@ -13,7 +13,7 @@ $breakpoint argument shortcude
 - big-desktop
 1em = 16px
 */
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Handlee&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
 * {
   margin: 0; }
 
@@ -63,87 +63,116 @@ li {
 
 .footer {
   width: 100%;
-  background-color: #004aad;
-  background: linear-gradient(180deg, #0795ff 0%, #004aad 100%);
-  height: 80px; }
+  background: linear-gradient(90deg, #004aad 0%, #0795ff 100%);
+  height: 50px; }
   .footer-redes {
     height: inherit;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     padding: 0px 10px 0px; }
   .footer-icon {
     fill: #fff;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin-left: 10px; }
   .footer-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    width: 100%;
-    background-color: #004aad; }
+    background: #004aad;
+    background: linear-gradient(90deg, #004aad 0%, #0795ff 100%);
+    height: 3rem;
+    width: 100%; }
     .footer-rights p {
       padding: 5px;
       text-align: center;
       font-size: 12px; }
 
 .slider {
-  color: #fff;
-  height: 90vh;
-  background-color: #004aad;
-  background: linear-gradient(180deg, #004aad 0%, #0795ff 100%); }
+  height: 70vh;
+  margin-bottom: 20px; }
   @media (max-width: 50em) {
     .slider {
       height: 70vh; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .slider {
-      height: 50vh; } }
+      height: 30vh; } }
+  .slider-svg {
+    position: relative;
+    z-index: 1;
+    fill: #004aad; }
+  .slider-container {
+    top: 50px;
+    left: 100px;
+    position: absolute;
+    z-index: 10;
+    width: 80vw; }
+    @media (max-width: 50em) {
+      .slider-container {
+        top: 70px;
+        left: 60px; } }
+    @media (min-width: 6.25em) and (max-width: 37.5em) {
+      .slider-container {
+        left: 0px;
+        top: 25px;
+        width: 100vw; } }
   .slider-projects {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     overflow: hidden;
     transition: 2s; }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .slider-projects {
-        justify-content: space-between; } }
-  .slider-img img {
-    width: 700px;
-    height: 600px; }
-    @media (max-width: 50em) {
-      .slider-img img {
-        width: 500px;
-        height: 400px; } }
+        justify-content: space-around; } }
+  .slider-img {
+    padding-top: 20px; }
+    .slider-img img {
+      width: 560px;
+      height: 460px; }
+      @media (max-width: 50em) {
+        .slider-img img {
+          width: 460px;
+          height: 360px; } }
+      @media (min-width: 6.25em) and (max-width: 37.5em) {
+        .slider-img img {
+          width: 240px;
+          height: 200px; } }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
-      .slider-img img {
-        width: 220px;
-        height: 190px; } }
+      .slider-img {
+        padding-top: 30px; } }
   .slider-texts {
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-right: 10px; }
     .slider-texts-title {
       font-size: 40px; }
       @media (max-width: 50em) {
         .slider-texts-title {
-          font-size: 30px; } }
+          font-size: 25px; } }
       @media (min-width: 6.25em) and (max-width: 37.5em) {
         .slider-texts-title {
-          font-size: 20px; } }
+          font-size: 16px;
+          padding-right: 0px; } }
     .slider-texts-text {
       color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 45px;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.2);
       width: 120px;
       border-radius: 100px;
       transition: all 0.7s; }
       @media (min-width: 6.25em) and (max-width: 37.5em) {
         .slider-texts-text {
-          width: 90px;
-          height: 35px;
+          height: 30px;
+          width: 80px;
           font-size: 12px; } }
       .slider-texts-text:hover {
         width: 130px;
@@ -227,7 +256,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     width: 350px; }
     .cards-container-box-img {
       width: 250px;
@@ -236,23 +265,35 @@ li {
         .cards-container-box-img {
           width: 200px;
           height: 250px; } }
+    .cards-container-box-title {
+      color: #0795ff; }
+    .cards-container-box:hover {
+      box-shadow: 3px 3px 6px -6px #333; }
 
 .aboutMe {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  color: #fff;
+  background: #fff;
+  background: linear-gradient(90deg, #004aad 0%, #0795ff 100%); }
+  .aboutMe-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
   .aboutMe h2 {
     margin-bottom: 10px;
-    font-size: 20px; }
+    font-size: 40px;
+    font-family: "Chewy", cursive;
+    letter-spacing: 1px; }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .aboutMe h2 {
-        font-size: 18px; } }
+        font-size: 16px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .aboutMe p {
       font-size: 12px; } }
   .aboutMe img {
-    width: 200px;
-    height: 200px; }
+    border-radius: 50%;
+    width: 300px;
+    height: 300px; }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .aboutMe img {
         width: 120px;
@@ -265,8 +306,8 @@ li {
     right: 0; }
   50% {
     top: -15px;
-    left: -20px;
-    right: 10px; }
+    left: 10px;
+    right: 15px; }
   100% {
     top: 0;
     left: 0;
@@ -295,7 +336,7 @@ li {
   width: 130px; }
   @media (max-width: 50em) {
     .w-150 {
-      width: 100px; } }
+      width: 90px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .w-150 {
       width: 70px; } }
