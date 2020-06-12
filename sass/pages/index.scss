@@ -1,11 +1,14 @@
 .slider {
   height: 70vh;
   margin-bottom: 20px;
+  @include respond(tab) {
+    height: 90vh;
+  }
   @include respond(phone-land) {
-    height: 70vh;
+    height: 60vh;
   }
   @include respond(phone) {
-    height: 30vh;
+    height: 40vh;
   }
   &-svg {
     position: relative;
@@ -13,18 +16,18 @@
     fill: $color-blue-1;
   }
   &-container {
-    top: 50px;
+    top: 80px;
     left: 100px;
     position: absolute;
     z-index: 10;
     width: 80vw;
-    @include respond(phone-land) {
-      top: 70px;
+    @include respond(tab) {
+      top: 30px;
       left: 60px;
     }
     @include respond(phone) {
       left: 0px;
-      top: 25px;
+      top: 35px;
       width: 100vw;
     }
   }
@@ -50,8 +53,8 @@
         height: 360px;
       }
       @include respond(phone) {
-        width: 240px;
-        height: 200px;
+        width: 190px;
+        height: 180px;
       }
     }
     @include respond(phone) {
@@ -64,11 +67,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    @include respond(phone) {
+      margin-top: -45px;
+    }
     &-title {
-      font-size: 40px;
+      font-size: 30px;
+      @include respond(tab) {
+        font-size: 20px;
+      }
       @include respond(phone-land) {
-        font-size: 25px;
+        font-size: 18px;
       }
       @include respond(phone) {
         font-size: 16px;
@@ -82,7 +90,7 @@
       align-items: center;
       height: 45px;
       background-color: rgba(#ffffff, 0.2);
-      width: 120px;
+      width: 140px;
       border-radius: 100px;
       transition: all 0.7s;
       @include respond(phone) {
@@ -91,9 +99,12 @@
         font-size: 12px;
       }
       &:hover {
-        width: 130px;
+        width: 125px;
         box-shadow: 3px 3px 6px -6px #000;
         cursor: pointer;
+        @include respond(phone) {
+          width: 90px;
+        }
       }
       &-icon {
         fill: $color-white;
@@ -158,9 +169,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: move 5s ease-in-out;
-        animation-duration: 4s;
-        animation-iteration-count: 3;
+        animation: move 5s ease-in-out 2s infinite alternate;
         img:hover {
           box-shadow: 3px 3px 6px -6px $color-grey-dark-1;
         }
@@ -283,18 +292,18 @@
   margin-right: 0;
 }
 .w-200 {
-  width: 160px;
+  width: 120px;
   @include respond(phone-land) {
-    width: 130px;
+    width: 80px;
   }
   @include respond(phone) {
-    width: 100px;
+    width: 70px;
   }
 }
 .w-150 {
-  width: 130px;
+  width: 110px;
   @include respond(phone-land) {
-    width: 90px;
+    width: 80px;
   }
   @include respond(phone) {
     width: 70px;

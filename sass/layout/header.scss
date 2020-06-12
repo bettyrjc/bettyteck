@@ -3,12 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   color: white;
   height: 75px;
+
   @include respond(phone) {
     height: 60px;
   }
+
   &-menuIcon {
     position: relative;
     top: -1000px;
@@ -17,11 +18,11 @@
   }
   &-logo {
     font-size: 20px;
+    font-family: "Chewy", cursive;
   }
   &-links {
     display: flex;
-    margin-right: 10px;
-
+    margin-right: 20px;
     li {
       margin-right: 10px;
       font-size: 16px;

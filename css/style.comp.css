@@ -93,16 +93,22 @@ li {
 .slider {
   height: 70vh;
   margin-bottom: 20px; }
+  @media (max-width: 50em) {
+    .slider {
+      height: 70vh; } }
+  @media (min-width: 6.25em) and (max-width: 37.5em) {
+    .slider {
+      height: 30vh; } }
   .slider-svg {
     position: relative;
     z-index: 1;
     fill: #004aad; }
   .slider-container {
-    top: 50px;
+    top: 80px;
     left: 100px;
     position: absolute;
     z-index: 10;
-    width: 90vw; }
+    width: 80vw; }
     @media (max-width: 50em) {
       .slider-container {
         top: 70px;
@@ -110,13 +116,8 @@ li {
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .slider-container {
         left: 0px;
-        top: 25px; } }
-  @media (max-width: 50em) {
-    .slider {
-      height: 100vh; } }
-  @media (min-width: 6.25em) and (max-width: 37.5em) {
-    .slider {
-      height: 50vh; } }
+        top: 25px;
+        width: 100vw; } }
   .slider-projects {
     display: flex;
     align-items: center;
@@ -271,9 +272,10 @@ li {
 
 .aboutMe {
   color: #fff;
-  background: #004aad;
+  background: #fff;
   background: linear-gradient(90deg, #004aad 0%, #0795ff 100%); }
   .aboutMe-container {
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center; }
@@ -284,7 +286,7 @@ li {
     letter-spacing: 1px; }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .aboutMe h2 {
-        font-size: 18px; } }
+        font-size: 16px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .aboutMe p {
       font-size: 12px; } }
@@ -304,8 +306,8 @@ li {
     right: 0; }
   50% {
     top: -15px;
-    left: -20px;
-    right: 10px; }
+    left: 10px;
+    right: 15px; }
   100% {
     top: 0;
     left: 0;
@@ -334,7 +336,7 @@ li {
   width: 130px; }
   @media (max-width: 50em) {
     .w-150 {
-      width: 100px; } }
+      width: 90px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .w-150 {
       width: 70px; } }

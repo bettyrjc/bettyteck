@@ -17,6 +17,10 @@ $breakpoint argument shortcude
 * {
   margin: 0; }
 
+body {
+  height: 100%;
+  width: 100%; }
+
 .main {
   margin: 0 5%; }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
@@ -50,10 +54,11 @@ li {
     width: 0;
     height: 0; }
   .header-logo {
-    font-size: 20px; }
+    font-size: 20px;
+    font-family: "Chewy", cursive; }
   .header-links {
     display: flex;
-    margin-right: 10px; }
+    margin-right: 20px; }
     .header-links li {
       margin-right: 10px;
       font-size: 16px; }
@@ -93,30 +98,33 @@ li {
 .slider {
   height: 70vh;
   margin-bottom: 20px; }
+  @media (max-width: 64em) {
+    .slider {
+      height: 90vh; } }
   @media (max-width: 50em) {
     .slider {
-      height: 70vh; } }
+      height: 60vh; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .slider {
-      height: 30vh; } }
+      height: 40vh; } }
   .slider-svg {
     position: relative;
     z-index: 1;
     fill: #004aad; }
   .slider-container {
-    top: 50px;
+    top: 80px;
     left: 100px;
     position: absolute;
     z-index: 10;
     width: 80vw; }
-    @media (max-width: 50em) {
+    @media (max-width: 64em) {
       .slider-container {
-        top: 70px;
+        top: 30px;
         left: 60px; } }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .slider-container {
         left: 0px;
-        top: 25px;
+        top: 35px;
         width: 100vw; } }
   .slider-projects {
     display: flex;
@@ -138,8 +146,8 @@ li {
           height: 360px; } }
       @media (min-width: 6.25em) and (max-width: 37.5em) {
         .slider-img img {
-          width: 240px;
-          height: 200px; } }
+          width: 190px;
+          height: 180px; } }
     @media (min-width: 6.25em) and (max-width: 37.5em) {
       .slider-img {
         padding-top: 30px; } }
@@ -148,13 +156,18 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-right: 10px; }
+    align-items: center; }
+    @media (min-width: 6.25em) and (max-width: 37.5em) {
+      .slider-texts {
+        margin-top: -45px; } }
     .slider-texts-title {
-      font-size: 40px; }
+      font-size: 30px; }
+      @media (max-width: 64em) {
+        .slider-texts-title {
+          font-size: 20px; } }
       @media (max-width: 50em) {
         .slider-texts-title {
-          font-size: 25px; } }
+          font-size: 18px; } }
       @media (min-width: 6.25em) and (max-width: 37.5em) {
         .slider-texts-title {
           font-size: 16px;
@@ -166,7 +179,7 @@ li {
       align-items: center;
       height: 45px;
       background-color: rgba(255, 255, 255, 0.2);
-      width: 120px;
+      width: 140px;
       border-radius: 100px;
       transition: all 0.7s; }
       @media (min-width: 6.25em) and (max-width: 37.5em) {
@@ -175,9 +188,12 @@ li {
           width: 80px;
           font-size: 12px; } }
       .slider-texts-text:hover {
-        width: 130px;
+        width: 125px;
         box-shadow: 3px 3px 6px -6px #000;
         cursor: pointer; }
+        @media (min-width: 6.25em) and (max-width: 37.5em) {
+          .slider-texts-text:hover {
+            width: 90px; } }
       .slider-texts-text-icon {
         fill: #fff;
         margin-left: 5px;
@@ -231,9 +247,7 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: move 5s ease-in-out;
-        animation-duration: 4s;
-        animation-iteration-count: 3; }
+        animation: move 5s ease-in-out 2s infinite alternate; }
         .lenguages-container-grill-box img:hover {
           box-shadow: 3px 3px 6px -6px #333; }
 
@@ -324,19 +338,19 @@ li {
   margin-right: 0; }
 
 .w-200 {
-  width: 160px; }
+  width: 120px; }
   @media (max-width: 50em) {
     .w-200 {
-      width: 130px; } }
+      width: 80px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .w-200 {
-      width: 100px; } }
+      width: 70px; } }
 
 .w-150 {
-  width: 130px; }
+  width: 110px; }
   @media (max-width: 50em) {
     .w-150 {
-      width: 90px; } }
+      width: 80px; } }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .w-150 {
       width: 70px; } }
