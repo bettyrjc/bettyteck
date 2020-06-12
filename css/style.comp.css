@@ -36,14 +36,14 @@ li {
   list-style-type: none; }
 
 .blue {
-  background-color: #004aad; }
+  background-color: #004aad;
+  color: white; }
 
 .header {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   height: 75px; }
   @media (min-width: 6.25em) and (max-width: 37.5em) {
     .header {
@@ -362,6 +362,39 @@ li {
   display: none; }
 
 .notFound {
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center;
+  color: #fff; }
+  @media (min-width: 6.25em) and (max-width: 37.5em) {
+    .notFound {
+      flex-direction: column-reverse; } }
+  .notFound img {
+    width: 20vw;
+    height: 70vh; }
+  .notFound-texts {
+    position: relative;
+    top: -20%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 6.25em) and (max-width: 37.5em) {
+      .notFound-texts {
+        top: 0%; } }
+    .notFound-texts h3 {
+      font-size: 40px; }
+      @media (min-width: 6.25em) and (max-width: 37.5em) {
+        .notFound-texts h3 {
+          font-size: 20px; } }
+    .notFound-texts a {
+      color: #fff; }
+
+.projects-card {
+  width: 500px;
+  height: 500px; }
+  .projects-card-img img {
+    width: 100%;
+    height: 300px; }
