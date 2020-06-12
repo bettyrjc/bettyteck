@@ -360,3 +360,34 @@ li {
 
 .hide {
   display: none; }
+
+.notFound {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+  @media (min-width: 6.25em) and (max-width: 37.5em) {
+    .notFound {
+      flex-direction: column-reverse; } }
+  .notFound img {
+    width: 20vw;
+    height: 70vh; }
+  .notFound-texts {
+    position: relative;
+    top: -20%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 6.25em) and (max-width: 37.5em) {
+      .notFound-texts {
+        top: 0%; } }
+    .notFound-texts h3 {
+      font-size: 40px; }
+      @media (min-width: 6.25em) and (max-width: 37.5em) {
+        .notFound-texts h3 {
+          font-size: 20px; } }
+    .notFound-texts a {
+      color: #fff; }
