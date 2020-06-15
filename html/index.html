@@ -10,13 +10,23 @@
   <body>
     <header class="header blue">
       <!-- <div class="header-menuIcon"></div> -->
-      <p class="header-logo">Betty</p>
+      <a href="index.html" class="header-logo">Betty</a>
       <ul class="header-links">
-        <li>Proyectos</li>
-        <li>Diseño</li>
-        <li>Blog</li>
-        <li>Contacto</li>
-        <li>Sobre mi</li>
+        <a href="projects.html">
+          <li>Proyectos</li>
+        </a>
+        <a href="design.html">
+          <li>Diseño</li>
+        </a>
+        <a href="noFound.html">
+          <li>Blog</li>
+        </a>
+        <a href="">
+          <li>Contacto</li>
+        </a>
+        <a href="#aboutMe">
+          <li>Sobre mi</li>
+        </a>
       </ul>
     </header>
     <div class="slider">
@@ -46,12 +56,12 @@
           </div>
           <div class="slider-texts">
             <h2 class="slider-texts-title">Frontend Developer</h2>
-            <p class="slider-texts-text">
+            <a href="projects.html" class="slider-texts-text">
               Proyectos
               <svg class="slider-texts-text-icon">
                 <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
               </svg>
-            </p>
+            </a>
           </div>
         </div>
         <!--  -->
@@ -61,12 +71,12 @@
           </div>
           <div class="slider-texts">
             <h2 class="slider-texts-title">Diseño UI</h2>
-            <p class="slider-texts-text">
-              Proyectos
+            <a href="./design.html" class="slider-texts-text">
+              Diseños
               <svg class="slider-texts-text-icon">
                 <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
               </svg>
-            </p>
+            </a>
           </div>
         </div>
         <!--  -->
@@ -76,19 +86,18 @@
           </div>
           <div class="slider-texts">
             <h2 class="slider-texts-title">Blog</h2>
-            <p class="slider-texts-text">
+            <a href="notFound.html" class="slider-texts-text">
               Ver blog
               <svg class="slider-texts-text-icon">
                 <use href="../img/icons/sprite.svg#icon-arrow-long-right" />
               </svg>
-            </p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <main class="main">
-      <!-- slider -->
       <!-- lenguajes -->
       <div class="lenguages">
         <div class="lenguages-container">
@@ -128,28 +137,28 @@
       </div>
       <!-- cards -->
       <div class="cards-container">
-        <div class="cards-container-box">
+        <a href="./design.html" class="cards-container-box">
           <img
             class="cards-container-box-img"
             src="../img/user-experience.svg"
           />
           <h1 class="cards-container-box-title">Diseños</h1>
-        </div>
+        </a>
         <!--  -->
-        <div class="cards-container-box">
+        <a href="projects.html" class="cards-container-box">
           <img class="cards-container-box-img" src="../img/landing-page.svg" />
           <h1 class="cards-container-box-title">Proyectos</h1>
-        </div>
+        </a>
         <!--  -->
-        <div class="cards-container-box">
+        <a href="noFound.html" class="cards-container-box">
           <img class="cards-container-box-img" src="../img/blog_1.svg" />
           <h1 class="cards-container-box-title">Blog</h1>
-        </div>
+        </a>
       </div>
       <!-- presentacion -->
       <!-- footer -->
     </main>
-    <div class="aboutMe">
+    <div class="aboutMe" id="aboutMe">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
         <path
           fill="#ffffff"
@@ -166,24 +175,27 @@
             intuitivas.
           </p>
         </div>
-        <img src="../img/charlando.png" alt="" class="aboutMe-img" />
+        <img src="../img/perfil.png" alt="" class="aboutMe-img" />
       </div>
     </div>
     <!--  -->
     <footer class="footer">
       <div class="footer-redes">
-        <svg class="footer-icon">
-          <use href="../img/icons/sprite.svg#icon-facebook" />
-        </svg>
-        <svg class="footer-icon">
-          <use href="../img/icons/sprite.svg#icon-github" />
-        </svg>
-        <svg class="footer-icon">
-          <use href="../img/icons/sprite.svg#icon-instagram" />
-        </svg>
-        <svg class="footer-icon">
-          <use href="../img/icons/sprite.svg#icon-twitter" />
-        </svg>
+        <a href="https://bettyrjc.github.io/">
+          <svg class="footer-icon">
+            <use href="../img/icons/sprite.svg#icon-github" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/bettyrjce">
+          <svg class="footer-icon">
+            <use href="../img/icons/sprite.svg#icon-twitter" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/betty.teck/">
+          <svg class="footer-icon">
+            <use href="../img/icons/sprite.svg#icon-instagram" />
+          </svg>
+        </a>
       </div>
     </footer>
     <script src="../js/index.js"></script>

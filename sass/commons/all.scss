@@ -11,6 +11,10 @@ body {
     margin: 0 0%;
   }
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 h1,
 h2,
 h3 {
@@ -22,4 +26,12 @@ li {
 .blue {
   background-color: $color-blue-1;
   color: white;
+}
+.black {
+  color: black;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
 }
